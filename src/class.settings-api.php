@@ -9,8 +9,8 @@
  * @link https://tareq.co Tareq Hasan
  * @example example/oop-example.php How to use the class
  */
-if ( !class_exists( 'WeDevs_Settings_API' ) ):
-class WeDevs_Settings_API {
+if ( !class_exists( 'Wenprise_Settings_API' ) ):
+class Wenprise_Settings_API {
 
     /**
      * settings sections array
