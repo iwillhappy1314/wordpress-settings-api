@@ -11,7 +11,7 @@ To install this package, edit your `composer.json` file:
 ```js
 {
     "require": {
-        "wenprise/wordpress-settings-api-class": "dev-master"
+        "wenprise/wordpress-settings-api": "dev-master"
     }
 }
 ```
