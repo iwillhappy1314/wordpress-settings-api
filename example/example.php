@@ -5,13 +5,12 @@
  *
  * @author Tareq Hasan
  */
-if ( !class_exists('WeDevs_Settings_API_Test' ) ):
 class WeDevs_Settings_API_Test {
 
     private $settings_api;
 
     function __construct() {
-        $this->settings_api = new WeDevs_Settings_API;
+        $this->settings_api = new Wenprise\SettingsApi;
 
         add_action( 'admin_init', array($this, 'admin_init') );
         add_action( 'admin_menu', array($this, 'admin_menu') );
@@ -28,7 +27,7 @@ class WeDevs_Settings_API_Test {
     }
 
     function admin_menu() {
-        add_options_page( 'Settings API', 'Settings API', 'delete_posts', 'settings_api_test', array($this, 'plugin_page') );
+        add_options_page( 'Settings API', 'Settings API', 'delete_posts', 'settings_api_test', array($this, 'render_plugin_page') );
     }
 
     function get_settings_sections() {
@@ -172,7 +171,7 @@ class WeDevs_Settings_API_Test {
         return $settings_fields;
     }
 
-    function plugin_page() {
+    function render_plugin_page() {
         echo '<div class="wrap">';
 
         $this->settings_api->show_navigation();
@@ -199,4 +198,3 @@ class WeDevs_Settings_API_Test {
     }
 
 }
-endif;

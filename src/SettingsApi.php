@@ -1,5 +1,7 @@
 <?php
 
+namespace Wenprise;
+
 /**
  * weDevs Settings API wrapper class
  *
@@ -9,8 +11,7 @@
  * @link https://tareq.co Tareq Hasan
  * @example example/oop-example.php How to use the class
  */
-if ( !class_exists( 'Wenprise_Settings_API' ) ):
-class Wenprise_Settings_API {
+class SettingsApi {
 
     /**
      * settings sections array
@@ -654,5 +655,3 @@ class Wenprise_Settings_API {
     }
 
 }
-
-endif;
